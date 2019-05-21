@@ -6,17 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Google</title>
     <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
       button {
         background-color: #f2f2f2;
         border: 0;
         border-radius: 4px;
         color: #5f6368;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         height: 36px;
         line-height: 27px;
         margin: 11px 4px;
         padding: 0 16px;
+      }
+
+      header {
+        align-content: center;
+        display: flex;
+        font-size: 13px;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+
+      header a {
+        display: inline-block;
+        line-height: 32px;
+        padding-left: 15px;
+        vertical-align: middle;
       }
 
       main {
@@ -25,6 +48,28 @@
 
       h1 {
         padding-top: 198px;
+      }
+
+      .google-menu {
+        padding-left: 10px;
+      }
+
+      .menu-button {
+        background-image: url("sprites.png");
+        background-position: -132px -38px;
+        background-size: 528px 68px;
+        height: 30px;
+        padding: 0;
+        margin-left: 15px;
+        width: 30px;
+        text-indent: -99999px;
+      }
+
+      .profile-button img {
+        border-radius: 50%;
+        display: block;
+        height: 32px;
+        width: 32px;
       }
 
       .search-buttons {
@@ -39,9 +84,27 @@
         margin: 0 auto;
         width: 584px;
       }
+
+      .user-menu {
+        padding-right: 30px;
+      }
     </style>
   </head>
   <body>
+    <header>
+      <nav class="google-menu">
+        <a href="">About</a>
+        <a href="">Store</a>
+      </nav>
+      <nav class="user-menu">
+        <a href="">Gmail</a>
+        <a href="">Images</a>
+        <a href="" class="menu-button">Menu</a>
+        <a href="" class="profile-button"
+          ><img src="user-icon.jpg" alt="Profile"
+        /></a>
+      </nav>
+    </header>
     <main>
       <h1><img src="googlelogo.png" alt="Google"/></h1>
       <form>
